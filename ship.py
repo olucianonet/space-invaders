@@ -12,9 +12,6 @@ class Ship:
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
 
-        # self.moving_right = False
-        # self.moving_left = False
-
         self.center = float(self.rect.centerx)
 
         self.moving_right = False
@@ -31,3 +28,5 @@ class Ship:
     def blitme(self):
         self.screen.blit(self.image, self.rect)
 
+    def center_ship(self):
+        self.center = self.screen_rect.centerx
